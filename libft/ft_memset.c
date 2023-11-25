@@ -1,24 +1,29 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omedbahtuchi <omedbahtuchi@student.42.f    +#+  +:+       +#+        */
+/*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:01:30 by omedbahtuch       #+#    #+#             */
-/*   Updated: 2023/11/11 08:03:25 by omedbahtuch      ###   ########.fr       */
+/*   Updated: 2023/11/25 17:14:42 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *b, int c, size_t len) {
-    unsigned char *p = b;
-    unsigned char uc = (unsigned char)c;
+#include <stdio.h>
+#include <string.h>
 
-    while (len-- > 0) {
-        *p++ = uc;
-    }
+void	*ft_memset(void *ptr, int c, size_t len)
+{
+	unsigned char	*temp_var;
 
-    return s;
+	temp_var = (void *)ptr;
+	while (len > 0)
+	{
+		*(temp_var++) = (unsigned char) c;
+		len--;
+	}
+	return (ptr);
 }

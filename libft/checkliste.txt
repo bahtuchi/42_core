@@ -5,8 +5,8 @@ isdigit #done
 isalnum #done
 isascii #done
 strlen #done
-memset
-bzero
+memset #done
+bzero #done
 memcpy
 memmove
 strlcpy
@@ -19,7 +19,7 @@ strncmp
 memchr
 memcmp
 strnstr
-atoi
+atoi #done
 
 (hierfür brauchen wir malloc())
 calloc
@@ -39,4 +39,5 @@ ft_putendl_fd
 ft_putnbr_fd
 
 
-after that do lists (bonus part)
+after that do lists (bonus part);
+
