@@ -1,18 +1,20 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/01 10:31:59 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/01 10:32:50 by ommehdiz         ###   ########.fr       */
+/*   Created: 2023/12/01 09:53:54 by ommehdiz          #+#    #+#             */
+/*   Updated: 2023/12/01 10:31:49 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-	
+	if (!c)
+		return ;
+	write(fd, &c, sizeof(c));
 }

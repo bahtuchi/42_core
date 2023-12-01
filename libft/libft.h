@@ -6,7 +6,7 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:00:48 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/11/27 10:37:17 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/11/28 16:00:21 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <string.h>
 
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);

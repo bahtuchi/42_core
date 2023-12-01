@@ -6,7 +6,7 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:06:52 by omedbahtuch       #+#    #+#             */
-/*   Updated: 2023/11/27 10:56:20 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/11/29 10:20:12 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -28,5 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		str++;
 		n--;
 	}
+	if (n)
+		return ((void *) str);
 	return (0);
 }
