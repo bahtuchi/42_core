@@ -6,7 +6,7 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:34:42 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/05 09:48:25 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/12/05 14:21:39 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -33,3 +33,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[i + j] = '\0';
 	return (i + srclen);
 }
+
+wefjweifj
+
+
