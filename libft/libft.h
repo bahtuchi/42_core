@@ -6,7 +6,7 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:00:48 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/06 10:53:06 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/12/06 22:49:02 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_itoa(int n);
 char	*ft_strdup(const char *s);
 void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);

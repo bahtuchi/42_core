@@ -1,16 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 11:24:42 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/06 22:51:03 by ommehdiz         ###   ########.fr       */
+/*   Created: 2023/12/06 22:47:09 by ommehdiz          #+#    #+#             */
+/*   Updated: 2023/12/06 22:49:55 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	
+	unsigned int	i;
+
+	i = 0;
+	while (*s)
+	{
+		f(i, s);
+		i++;
+		s++;
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:06:52 by omedbahtuch       #+#    #+#             */
-/*   Updated: 2023/12/01 12:25:48 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/12/06 22:06:41 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	str = (const unsigned char *)s;
 	unsigned_c = (unsigned char) c;
-	if (!s)
-		return ((void *) str);
 	while (n > 0)
 	{
 		if (*str == unsigned_c)

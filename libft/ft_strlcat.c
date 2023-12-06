@@ -6,7 +6,7 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:34:42 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/06 09:23:36 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:38:37 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	j;
 	size_t	srclen;
 
-	i = ft_strlen(dst);
+	i = 0;
 	srclen = ft_strlen(src);
 	if (dstsize == 0)
-		return (i + srclen);
-	if (i >= dstsize)
-		return (i + srclen);
+		return (srclen);
 	j = 0;
-	while (src[j] != '\0' && j < dstsize - i - 1)
+	while (dst[i] != '\0' && i < dstsize)
+		i++;
+	while (src[j] != '\0' && (j + i < dstsize - 1))
 	{
 		dst[i + j] = src[j];
 		j++;
 	}
-	dst[i + j] = '\0';
+	if (i < dstsize)
+		dst[i + j] = '\0';
 	return (i + srclen);
 }
