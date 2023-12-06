@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
@@ -6,26 +6,24 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 14:09:51 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/05 11:39:47 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:03:42 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*temp_dst;
-	unsigned char	*temp_src;
+	unsigned char		*temp_src;
 	size_t				i;
 
 	temp_dst = (unsigned char *) dst;
 	temp_src = (unsigned char *) src;
 	i = 0;
-	/*if(!dst && !src)
-		return (NULL);*/
-	if (temp_dst == temp_src)
-		return (dst);
-	if(temp_dst < temp_src)
+	if (!dst && !src)
+		return (NULL);
+	if (temp_dst < temp_src)
 	{
 		while (i < len)
 		{
@@ -35,10 +33,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	else
 	{
-		while(len-- > 0)
-		{
+		while (len-- > 0)
 			temp_dst[len] = temp_src[len];
-		}
 	}
 	return (dst);
 }

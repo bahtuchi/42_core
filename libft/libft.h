@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
@@ -6,15 +6,18 @@
 /*   By: ommehdiz <ommehdiz@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:00:48 by ommehdiz          #+#    #+#             */
-/*   Updated: 2023/12/05 10:36:04 by ommehdiz         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:53:06 by ommehdiz         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
 # include <unistd.h>
+# include <stdlib.h>
 
+char	*ft_strdup(const char *s);
+void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
